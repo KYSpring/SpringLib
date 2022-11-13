@@ -129,6 +129,10 @@ script$1.render = render$1;
 script$1.__scopeId = "data-v-43b57aec";
 script$1.__file = "spring-swiper/src/iwan-swiper.vue";
 
+script$1.install = (Vue) => {
+  Vue.component(script$1.name, script$1);
+};
+
 var script = Vue.extend({
   name: 'IwanSwiperSlide',
   inject: ['getCurrentId'],
@@ -169,23 +173,15 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }))
 }
 
-var css_248z = ".iwan_swiper_slide[data-v-0cac36a4] {\n  position: relative;\n  color: black;\n  width: 100%;\n  height: 100%; }\n\n.iwan_slide-enter .iwan_slide-leave-to[data-v-0cac36a4] {\n  opacity: 0; }\n\n.iwan_slide-enter-to .iwan_slide-leave[data-v-0cac36a4] {\n  opacity: 1; }\n\n.iwan_slide-enter-active[data-v-0cac36a4] {\n  animation: slide-in-0cac36a4 .5s; }\n\n@keyframes slide-in-0cac36a4 {\n  0% {\n    transform: translateX(100%); }\n  100% {\n    transform: translateX(0%); } }\n";
+var css_248z = ".iwan_swiper_slide[data-v-b799f05c] {\n  position: relative;\n  color: black;\n  width: 100%;\n  height: 100%; }\n\n.iwan_slide-enter .iwan_slide-leave-to[data-v-b799f05c] {\n  opacity: 0; }\n\n.iwan_slide-enter-to .iwan_slide-leave[data-v-b799f05c] {\n  opacity: 1; }\n\n.iwan_slide-enter-active[data-v-b799f05c] {\n  animation: slide-in-b799f05c .5s; }\n\n@keyframes slide-in-b799f05c {\n  0% {\n    transform: translateX(100%); }\n  100% {\n    transform: translateX(0%); } }\n";
 styleInject(css_248z);
 
 script.render = render;
-script.__scopeId = "data-v-0cac36a4";
-script.__file = "spring-swiper/src/iwan-swiper-slide.vue";
+script.__scopeId = "data-v-b799f05c";
+script.__file = "spring-swiper-slide/src/iwan-swiper-slide.vue";
 
-script$1.install = (Vue) => {
-  Vue.component(script$1.name, script$1);
-};
 script.install = (Vue) => {
-  Vue.component(script.name, script);
-};
+    Vue.component(script.name, script);
+  };
 
-var index = {
-  IwanSwiper: script$1,
-  IwanSwiperSlide: script
-};
-
-export { index as SpringSwiper };
+export { script$1 as IwanSwiper, script as IwanSwiperSlide };

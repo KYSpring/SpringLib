@@ -7,30 +7,48 @@ export default [
     input: 'index.js',
     output: {
       format: 'esm',
-      file: 'dist/springlib.esm.js'
-      // file: 'dist/springlib.esm.js'
+      file: 'spring-lib/dist/springlib.esm.js'
+    },
+    plugins: [
+      vue(),
+      postcss({
+        plugins: []
+      }),
+    ],
+    external:['vue'],
+  },
+  // preseve module
+  {
+    input: 'index.js',
+    output: {
+      format: 'esm',
+      dir: 'spring-lib/es/',
+      sourcemap: false,
+      preserveModules: true,
+      preserveModulesRoot: 'src',
     },
     plugins: [
       vue(),
       postcss({
         plugins: []
       })
-    ]
+    ],
+    external:['vue'],
   },
   // SSR build.
-  {
-    input: 'index.js',
-    output: {
-      format: 'cjs',
-      file: 'dist/springlib.ssr.js'
-    },
-    plugins: [
-      vue({ template: { optimizeSSR: true } }),
-      postcss({
-        plugins: []
-      })
-    ]
-  },
+  // {
+  //   input: 'index.js',
+  //   output: {
+  //     format: 'cjs',
+  //     file: 'spring-lib/dist/springlib.ssr.js'
+  //   },
+  //   plugins: [
+  //     vue({ template: { optimizeSSR: true } }),
+  //     postcss({
+  //       plugins: []
+  //     })
+  //   ]
+  // },
   // Browser build.
   // {
   //   input: 'src/wrapper.js',

@@ -1,5 +1,7 @@
-import SpringSwiper from "./spring-swiper/index";
+import IwanSwiper from "./spring-swiper/index";
+import IwanSwiperSlide from "./spring-swiper-slide/index";
 
 export {
-    SpringSwiper
+    IwanSwiper,
+    IwanSwiperSlide
 }
