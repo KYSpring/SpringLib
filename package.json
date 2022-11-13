@@ -1,0 +1,29 @@
+{
+  "name": "springlib",
+  "version": "1.0.0",
+  "description": "colorful components store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KYSpring/SpringLib.git"
+  },
+  "author": "shawn wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KYSpring/SpringLib/issues"
+  },
+  "homepage": "https://github.com/KYSpring/SpringLib#readme",
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.2.45",
+    "node-sass": "^8.0.0",
+    "rollup-plugin-css-only": "^4.3.0",
+    "rollup-plugin-import-css": "^3.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-vue": "^6.0.0",
+    "vue": "^2.6.14"
+  }
+}
