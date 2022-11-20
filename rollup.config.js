@@ -3,20 +3,20 @@ import postcss from 'rollup-plugin-postcss'
 
 export default [
   // ESM build to be used with webpack/rollup.
-  {
-    input: 'index.js',
-    output: {
-      format: 'esm',
-      file: 'spring-lib/dist/springlib.esm.js'
-    },
-    plugins: [
-      vue(),
-      postcss({
-        plugins: []
-      }),
-    ],
-    external:['vue'],
-  },
+  // {
+  //   input: 'index.js',
+  //   output: {
+  //     format: 'esm',
+  //     file: 'spring-lib/dist/springlib.esm.js'
+  //   },
+  //   plugins: [
+  //     vue(),
+  //     postcss({
+  //       plugins: []
+  //     }),
+  //   ],
+  //   external:['vue'],
+  // },
   // preseve module
   {
     input: 'index.js',
