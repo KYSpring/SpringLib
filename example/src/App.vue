@@ -2,7 +2,8 @@
 import HelloWorld from './components/HelloWorld.vue';
 import TheWelcome from "./components/TheWelcome.vue";
 // import { IwanSwiper, IwanSwiperSlide } from 'springlib';
-import { IwanSwiper, IwanSwiperSlide } from '../../index.js';
+// import { IwanSwiper, IwanSwiperSlide } from '../../index.js';
+import { IwanSwiper, IwanSwiperSlide } from '../../spring-lib/es';
 
 </script>
 

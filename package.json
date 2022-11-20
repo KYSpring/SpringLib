@@ -1,6 +1,6 @@
 {
   "name": "@tencent/springlib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "colorful components store",
   "main": "index.js",
   "scripts": {
