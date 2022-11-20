@@ -6,7 +6,7 @@ var script = Vue.extend({
   props: {
     // 支持消费方决定当前轮播卡片的执行顺序
     slideId: {
-      type: Number,
+      type: Number | String,
       required: true,
     },
   },
@@ -17,7 +17,7 @@ var script = Vue.extend({
   },
   computed: {
     isShowSlide() {
-      return this.getCurrentId() === this.slideId;
+      return this.getCurrentId() === Number(this.slideId);
     },
   },
 });

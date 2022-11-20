@@ -1,6 +1,8 @@
 import vue from 'rollup-plugin-vue' // https://rollup-plugin-vue.vuejs.org/examples.html#component-library
 import postcss from 'rollup-plugin-postcss'
 
+const path = require('path');
+
 export default [
   // ESM build to be used with webpack/rollup.
   // {
@@ -33,7 +35,11 @@ export default [
         plugins: []
       })
     ],
-    external:['vue'],
+    external:[
+      'vue',
+      /node_modules/,
+      path.resolve( __dirname, '/example/' ),
+    ],
   },
   // SSR build.
   // {
